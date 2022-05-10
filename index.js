@@ -20,9 +20,6 @@ app.use('/',require("./routes/get-token"));
 
 app.use('/',require("./routes/get-all-data"));
 
-app.get('/',(req,res)=>{
-    res.send("Welcome to token-gated API");
-});
 
 
 app.listen(PORT);
