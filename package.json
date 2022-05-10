@@ -4,6 +4,7 @@
   "description": "Back-end for token-gated-dApp",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd ../client && npm run start",
     "devStartServer": "nodemon index.js",
