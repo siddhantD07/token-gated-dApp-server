@@ -1,4 +1,4 @@
-const findAllTokensFromDB = (items) => {
+const getTokenIds = (items) => {
     var tokenIDs =[];
     items.forEach(element => {
         tokenIDs.push(element.tokenId);
@@ -6,4 +6,4 @@ const findAllTokensFromDB = (items) => {
     return tokenIDs;
 }
 
-module.exports = findAllTokensFromDB;
+module.exports = getTokenIds;

@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd ../client && npm run start",
     "devStartServer": "nodemon index.js",
-    "dev": "concurrently -n 'server,client' -c 'red,green' \"npm run devStartServer\" \"npm run client\""
+    "dev": "concurrently -n 'server,client' -c 'yellow,green' \"npm run devStartServer\" \"npm run client\""
   },
   "author": "sid",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "express": "^4.18.1",
+    "express-validator": "^6.14.0",
     "mongoose": "^6.3.2",
     "web3": "^1.7.3"
   },

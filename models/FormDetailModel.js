@@ -22,6 +22,30 @@ const FormDetailSchema = new Schema({
     email : {
         type:String,
         required:true,
+    },
+    phone:{
+        type:String,
+        required:true,
+    },
+    homeAddress:{
+        type:String,
+        required:true,
+    },
+    city:{
+        type:String,
+        required:true,
+    },
+    stateProvince:{
+        type:String,
+        required:true,
+    },
+    country:{
+        type:String,
+        required:true,
+    },
+    postalCode:{
+        type:String,
+        required:true,
     }
 });
 
