@@ -5,9 +5,12 @@ const crypto = require('crypto');
 
 
 router.get('/get-token',(req,res)=>{
-    var token = crypto.randomBytes(40).toString('hex');
-    console.log(token);
-    res.status(200).send(token);
+    try{
+        var token = "Please sign this message to verify your identity : "+crypto.randomBytes(40).toString('hex');
+        res.status(200).send(token);
+    }catch(error){
+        res.status(500).send(error);
+    }
 })
 
 module.exports = router;
